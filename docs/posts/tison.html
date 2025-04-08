@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache 基金会治理对话 | 专访新任董事 tison</title>
+    <link href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+</head>
+<body class="antialiased">
+    <main class="lg:ml-64 pt-16 lg:pt-0">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <!-- Article Header -->
+            <div class="mb-12">
+                <div class="flex items-center space-x-2 text-sm text-gray-500 mb-4">
+                    <span>开源治理</span>
+                    <span>•</span>
+                    <span>2025年3月</span>
+                    <span>•</span>
+                    <span class="ai-generated-tag text-indigo-600">DeepSeek 协助创作</span>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Apache 基金会治理对话</h1>
+                <p class="text-xl text-gray-600 mb-4">专访新任 Apache 董事会成员 tison</p>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <i class="fas fa-user-edit"></i>
+                        <span>采访者：庄表伟</span>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Introduction Section -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/4 mb-8 md:mb-0">
+                    <h2 class="section-title text-2xl font-bold">引言</h2>
+                </div>
+                <div class="md:w-3/4">
+                    <div class="prose max-w-none">
+                        <p class="first-letter text-lg">在开源世界中，Apache 软件基金会（ASF）作为最具影响力的开源组织之一，其治理模式和运作机制一直备受关注。近期，中国开发者 tison 成功当选 Apache 基金会董事会成员，这是继吴晟、姜宁之后，第三位担任 Apache 董事的中国开发者。本次专访中，tison 详细分享了 Apache 基金会的治理结构、董事会的工作内容以及中国开发者在 Apache 生态中的参与情况。</p>
+                        
+                        <div class="quote-block my-8">
+                            <p class="text-xl">Apache 基金会董事会是基金会的核心治理机构，负责监督项目运作、审议季度报告，并处理项目中出现的各种问题和争议。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-16 px-6 md:px-12">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/3 md:pr-12">
+                    <!-- Apache 董事会选举 -->
+                    <article class="mb-16">
+                        <h2 class="section-title text-2xl font-bold">Apache 董事会选举</h2>
+                        <div class="prose max-w-none">
+                            <p>今年的 Apache 董事会选举竞争激烈，有 20+ 候选人竞争 9 个董事席位。选举过程在每年的成员大会上进行，今年是在 3 月 6 日。</p>
+                            
+                            <div class="bg-gray-50 p-6 rounded-lg my-8">
+                                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                                    <i class="fas fa-vote-yea text-accent-color mr-2"></i>选举流程
+                                </h3>
+                                <ul class="space-y-4">
+                                    <li class="flex">
+                                        <div class="mr-4 text-accent-color"><i class="fas fa-calendar-alt"></i></div>
+                                        <div>
+                                            <p class="font-medium">提名期</p>
+                                            <p class="text-gray-600">2 月初开始，持续到会议前一周（2 月 28 日左右）</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="mr-4 text-accent-color"><i class="fas fa-users"></i></div>
+                                        <div>
+                                            <p class="font-medium">投票资格</p>
+                                            <p class="text-gray-600">824 位活跃成员拥有投票权，每人一票</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="mr-4 text-accent-color"><i class="fas fa-clock"></i></div>
+                                        <div>
+                                            <p class="font-medium">投票期</p>
+                                            <p class="text-gray-600">持续一周，今年投票率接近 50%（约 400 票）</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <p>选举结束后，新一届董事会会在第一次会议上推选主席和副主席。主席主要负责主持各种会议，包括成员大会；副主席则在主席无法履职时接任。</p>
+                            
+                            <p>值得注意的是，Apache 董事会会议允许成员作为嘉宾参加，但涉及董事会内部讨论或决议的部分可能会限制在董事会内部进行。</p>
+                        </div>
+                    </article>
+                    
+                    <!-- 董事会工作内容 -->
+                    <article class="mb-16">
+                        <h2 class="section-title text-2xl font-bold">董事会工作内容</h2>
+                        <div class="prose max-w-none">
+                            <p>Apache 董事会每月第三个周三召开例会，主要工作包括：</p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                                <div class="card bg-white p-6">
+                                    <div class="text-accent-color text-3xl mb-4">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-2">审议项目报告</h3>
+                                    <p class="text-gray-600">监督 300 多个顶级项目的季度报告，评估项目活跃度和健康状况</p>
+                                </div>
+                                
+                                <div class="card bg-white p-6">
+                                    <div class="text-accent-color text-3xl mb-4">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-2">处理项目争议</h3>
+                                    <p class="text-gray-600">调解项目中出现的冲突，协调不同企业背景的贡献者之间的分歧</p>
+                                </div>
+                                
+                                <div class="card bg-white p-6">
+                                    <div class="text-accent-color text-3xl mb-4">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-2">项目生命周期管理</h3>
+                                    <p class="text-gray-600">决定项目退休、更换项目主席等重大事项，需要董事会决议</p>
+                                </div>
+                                
+                                <div class="card bg-white p-6">
+                                    <div class="text-accent-color text-3xl mb-4">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-2">跨项目协调</h3>
+                                    <p class="text-gray-600">作为中介促进不同项目之间的合作，提供政策澄清和具体支持</p>
+                                </div>
+                            </div>
+                            
+                            <p>董事会会议通常持续 30 分钟到 1 小时 30 分钟不等，取决于议题的复杂程度和争议性。今年的第一次董事会会议吸引了 35 位成员参加，创下历史新高。</p>
+                        </div>
+                    </article>
+
+                    <!-- 基金会治理挑战与转型 -->
+                    <article class="mb-16">
+                        <h2 class="section-title text-2xl font-bold">基金会治理挑战与转型</h2>
+                        <div class="prose max-w-none">
+                            <p>作为一个已经发展了25年的基金会，如何进入下一个25年：</p>
+                            
+                            <div class="timeline my-8">
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">低成本运作</h3>
+                                    <p class="text-gray-600">每年获得捐赠的规模仅为Linux基金会的百分之一，依赖企业白金赞助（12万美元/年）及基础设施捐赠（如云服务）。</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">文档危机</h3>
+                                    <p class="text-gray-600">历史决策信息分散，老成员隐性知识垄断，威胁治理延续性。tison 计划在任期内系统梳理共识，以书面形式固定并在成员之间、项目当中广泛传播和落实共识。</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">全球化共识重建</h3>
+                                    <p class="text-gray-600">800+成员跨越年龄（20岁至70岁）、文化背景，需重构协作规则以适应多元诉求。</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">流程革新难题</h3>
+                                    <p class="text-gray-600">新生代开发者呼吁改革传统协作方式（如从邮件列表主导转为多种沟通渠道选择），落地时面临现有流程规章的挑战，需要新老成员合作突破。</p>
+                                </div>                               
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">新兴领域布局</h3>
+                                    <p class="text-gray-600">tison透露正推动AI（如机器学习平台）、Rust等前沿技术项目入驻Apache，寻求“标杆项目”突破。</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">品牌年轻化</h3>
+                                    <p class="text-gray-600">尝试自动化工具生成社区周报、AI辅助会议纪要，但实际效果待验证。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- 中国在 Apache 的参与 -->
+                    <article class="mb-16">
+                        <h2 class="section-title text-2xl font-bold">中国在 Apache 的参与</h2>
+                        <div class="prose max-w-none">
+                            <p>虽然 Apache 基金会不强制要求成员提供国籍或公司所属关系，但从可获得的信息来看，中国开发者在 Apache 生态中的参与度正在稳步提升：</p>
+                            
+                            <div class="timeline my-8">
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">董事会代表</h3>
+                                    <p class="text-gray-600">从吴晟（2021年）开始，每年董事会中都有一席中国董事，之后是姜宁，现在是 tison</p>
+                                </div>                                
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">项目贡献</h3>
+                                    <p class="text-gray-600">近年来，源自中国的项目数量显著增加</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h3 class="text-lg font-semibold">中国行动重点</h3>
+                                    <p class="text-gray-600">优化国内项目入孵流程，通过线下见面会、案例手册降低文化摩擦；推动高校开源教育，扩大贡献者基数。</p>
+                                </div>
+                            </div>
+                            
+                            <p>tison 提到，Apache 基金会目前处于活跃期，新项目不断涌入。去年有约 10 个新的孵化项目，今年前三个月已有 5 个新项目加入，显示出健康的发展态势。</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="md:w-1/3">
+                    <!-- Sidebar Content -->
+                    <div class="sticky top-8">
+                        <!-- Apache 基金会结构可视化 -->
+                        <div class="card bg-white p-6 mb-8">
+                            <h3 class="text-xl font-semibold mb-4">Apache 基金会结构</h3>
+                            <div class="mermaid-diagram">
+                                <pre class="mermaid">
+flowchart TD
+    ASF[Apache 软件基金会] --> Board[董事会\n9名成员]
+    ASF --> Members[基金会成员\n824位活跃成员]
+    ASF --> Officers[官员\n总裁、执行副总裁等]
+    ASF --> Projects[顶级项目\n300+个]
+    
+    Board --> Chair[主席]
+    Board --> ViceChair[副主席]
+    
+    Projects --> PMC[项目管理委员会]
+    PMC --> PMCChair[PMC主席]
+    PMC --> Committers[提交者]
+    
+    style ASF fill:#f56565,color:white
+    style Board fill:#2d3748,color:white
+                                </pre>
+                            </div>
+                        </div>
+                        
+                        <!-- 关键数据 -->
+                        <div class="card bg-white p-6 mb-8">
+                            <h3 class="text-xl font-semibold mb-4">Apache 关键数据</h3>
+                            <ul class="space-y-4">
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-100">
+                                    <span class="text-gray-600">董事会成员</span>
+                                    <span class="font-semibold">9 人</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-100">
+                                    <span class="text-gray-600">活跃成员</span>
+                                    <span class="font-semibold">824 人</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-100">
+                                    <span class="text-gray-600">顶级项目</span>
+                                    <span class="font-semibold">300+ 个</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span class="text-gray-600">2023年新孵化项目</span>
+                                    <span class="font-semibold">~10 个</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Apache 发展历程 -->
+                        <div class="card bg-white p-6">
+                            <h3 class="text-xl font-semibold mb-4">Apache 发展历程</h3>
+                            <div class="mermaid-diagram">
+                                <pre class="mermaid">
+timeline
+    title Apache 基金会发展历程
+    section 第一阶段
+        Web 服务器时代 : Apache HTTP Server
+    section 第二阶段
+        Java 生态时代 : J2EE 实现
+    section 第三阶段
+        大数据时代 : Hadoop 生态
+    section 当前
+        多元化发展 : 云原生、AI 等
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="section-title text-2xl font-bold">结语</h2>
+            <div class="prose max-w-none">
+                <p>通过本次专访，我们深入了解了 Apache 软件基金会的治理结构和运作机制。作为全球最具影响力的开源组织之一，Apache 基金会正在经历新一轮的活跃期，不断有新项目和新成员加入。</p>
+                
+                <p>中国开发者在 Apache 生态中的参与度也在稳步提升，从董事会到普通成员，中国力量正在发挥越来越重要的作用。随着开源在中国的普及和深入，相信未来会有更多中国开发者和项目加入到 Apache 大家庭中。</p>
+                
+                <div class="quote-block my-8">
+                    <p class="text-xl">开源不分国界，但每个地区的开发者都能为开源社区带来独特的价值和视角。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 md:px-12 bg-gray-900 text-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Mermaid JS
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'cardinal'
+            },
+            securityLevel: 'loose'
+        });
+    </script>
+</body>
+            </article>
+        </div>
+    </main>
+    <script>
+        // Initialize Mermaid JS
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'cardinal'
+            },
+            securityLevel: 'loose'
+        });
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
