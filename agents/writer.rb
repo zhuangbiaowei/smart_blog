@@ -3,7 +3,7 @@ SmartAgent.define :writer do
   if result.call_tools
     filename = call_tools(result).first
     content = call_worker(:generate_blog, params, with_tools: false, with_history: true)
-    content = content.response
+    content = content.response.dig("choices", 0, "message", "content")
     content = content.match(/```html\n(.*?)```/m)[1]
     f = File.new("./docs/posts/" + filename, "w")
     f.puts content
