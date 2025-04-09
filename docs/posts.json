@@ -1,17 +1,22 @@
 [
-    {
-        "title": "我们需要一种新的写作方式",
-        "date": "2025-04-08",
-        "filename": "20250408.html"
-    },
-    {
-        "title": "Apache 基金会治理对话 | 专访新任董事 tison",
-        "date": "2025-03-28",
-        "filename": "tison.html"
-    },
-    {
-        "title": "如何使用DeepSeek V3生成高质量博客文章",
-        "date": "2025-03-25",
-        "filename": "index.html"
-    }
+  {
+    "title": "智能代理与MCP：用Ruby构建MCP SDK与Agent框架",
+    "date": "2025-04-09",
+    "filename": "20250409.html"
+  },
+  {
+    "title": "我们需要一种新的写作方式",
+    "date": "2025-04-08",
+    "filename": "20250408.html"
+  },
+  {
+    "title": "Apache 基金会治理对话 | 专访新任董事 tison",
+    "date": "2025-03-28",
+    "filename": "tison.html"
+  },
+  {
+    "title": "如何使用DeepSeek V3生成高质量博客文章",
+    "date": "2025-03-25",
+    "filename": "index.html"
+  }
 ]
