@@ -2,8 +2,8 @@ require "readline"
 require "uri"
 require "json"
 require "net/http"
-require "../smart_prompt/lib/smart_prompt"
-require "../smart_agent/lib/smart_agent"
+require "smart_prompt"
+require "smart_agent"
 
 class LLMInteraction
   def initialize(engine)
