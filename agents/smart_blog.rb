@@ -15,4 +15,4 @@ SmartAgent.define :smart_blog do
   end
 end
 
-SmartAgent.build_agent(:smart_blog, tools: [:search])
+SmartAgent.build_agent(:smart_blog, mcp_servers: [:all])

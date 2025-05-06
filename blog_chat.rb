@@ -3,7 +3,7 @@ require "uri"
 require "json"
 require "net/http"
 require "smart_prompt"
-require "smart_agent"
+require "../smart_agent/lib/smart_agent"
 
 class LLMInteraction
   def initialize(engine)
@@ -17,7 +17,7 @@ class LLMInteraction
     puts "输入 'exit' 来退出程序。"
 
     loop do
-      input = Readline.readline("> ", true)
+      input = Readline.readline("#{@current_agent.name} > ", true)
       break if input.nil?
 
       case input
