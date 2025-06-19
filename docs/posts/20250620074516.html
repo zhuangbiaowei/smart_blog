@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何更加有效的优化提示词 | 技术博客</title>
+    <link href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif SC', serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-weight: 600;
+        }
+        .prose {
+            max-width: 56rem;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            font-family: monospace;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: rgba(0, 123, 255, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.2rem;
+        }
+        .tag-ai {
+            background-color: #6f42c1;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <article class="prose mx-auto">
+            <!-- 文章头部 -->
+            <header class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <span class="tag-ai">AI</span>
+                    <span class="text-gray-500"><i class="far fa-clock mr-1"></i>2025-06-20</span>
+                    <span class="text-gray-500"><i class="far fa-eye mr-1"></i>1.2k</span>
+                </div>
+                <h1 class="text-4xl font-bold mb-4">如何更加有效的优化提示词</h1>
+                <p class="text-gray-600">作者：庄表伟</p>
+            </header>
+
+            <!-- 文章内容 -->
+            <div class="prose">
+                <p class="text-lg text-gray-700 mb-6">在AI模型的应用中，提示词（Prompt）的质量直接影响模型的输出效果。本文将分享如何通过系统化的方法优化提示词，提升模型性能与效率。</p>
+
+                <h2 class="text-2xl font-semibold mb-4">1. 记录所有日志</h2>
+                <p>为了全面分析提示词的效果，建议记录以下内容：</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>提示词的具体内容</li>
+                    <li>工具或MCP调用的详细信息</li>
+                    <li>大模型的返回结果，包括使用的品牌与型号（如GPT-4、Claude等）</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold mb-4">2. 记录服务端返回的时间与Token数量</h2>
+                <p>通过记录以下数据，可以更精准地评估成本与效率：</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>服务端响应时间</li>
+                    <li>消耗的Token数量</li>
+                </ul>
+                <div class="code-block mb-6">
+                    <pre><code>{
+    "response_time": "120ms",
+    "tokens_used": 256
+}</code></pre>
+                </div>
+
+                <h2 class="text-2xl font-semibold mb-4">3. 根据用户反馈优化提示词</h2>
+                <p>用户的评价是优化提示词的重要依据。可以通过以下方式收集反馈：</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>用户对模型输出的满意度评分</li>
+                    <li>用户手动调整的提示词内容</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold mb-4">4. 根据工程需求选择提示词与模型</h2>
+                <p>在实际应用中，需根据具体需求选择：</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>合适的提示词模板</li>
+                    <li>适合的模型供应商（如OpenAI、Anthropic等）</li>
+                    <li>具体的模型版本（如GPT-4 vs. GPT-3.5）</li>
+                </ul>
+
+                <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                    <p class="font-semibold text-blue-800"><i class="fas fa-lightbulb mr-2"></i>提示：</p>
+                    <p>优化提示词是一个迭代过程，建议定期回顾日志与用户反馈，持续改进。</p>
+                </div>
+            </div>
+
+            <!-- 文章尾部 -->
+            <footer class="mt-12">
+                <div class="flex justify-between items-center border-t pt-6">
+                    <div>
+                        <p class="text-gray-600">作者：庄表伟</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+</body>
+</html>
