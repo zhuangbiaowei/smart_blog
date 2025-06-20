@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如果一篇写论文就像写代码一样</title>
+    <link href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif SC', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-weight: 700;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .prose {
+            max-width: 56rem;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 0.375rem;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #f0f7ff;
+            padding: 0.5rem;
+            border-left: 3px solid #007bff;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .tag-ai {
+            background-color: #e9d8fd;
+            color: #6f42c1;
+        }
+        .tag-tech {
+            background-color: #d1e7ff;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <article class="prose mx-auto">
+            <!-- 文章头部 -->
+            <header class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <span class="tag tag-tech">技术</span>
+                    <span class="tag tag-ai">AI</span>
+                    <span class="text-gray-500"><i class="far fa-clock mr-1"></i>2025-06-20</span>
+                    <span class="text-gray-500"><i class="far fa-eye mr-1"></i>1,024</span>
+                </div>
+                <h1 class="text-4xl font-bold">如果一篇写论文就像写代码一样</h1>
+                <p class="text-gray-600">作者：庄表伟</p>
+            </header>
+
+            <!-- 文章内容 -->
+            <div class="prose">
+                <!-- 引言 -->
+                <div class="highlight mb-6">
+                    <p>在软件开发领域，我们都会使用集成开发环境（IDE），但是在科研论文的领域，却实在缺少好用的集成写作环境。我们可以做以下设想：如果有一个开源的集成写作环境，再配合不同的学科、不同的写作阶段、不同的写作目的，安装各种不同的插件，科研论文的写作将会变得更加高效和准确。</p>
+                </div>
+
+                <!-- 正文 -->
+                <h2>1. 开源集成写作环境的设想</h2>
+                <p>想象一下，如果科研论文的写作能够像写代码一样，拥有一个功能强大的集成写作环境（IWE），那会是什么样子？</p>
+                <ul>
+                    <li><strong>插件化设计</strong>：为不同学科（如计算机科学、生物学、经济学）提供专门的插件，支持学科特有的写作需求。</li>
+                    <li><strong>阶段化支持</strong>：从文献综述、实验设计到结果分析，每个阶段都有对应的工具和模板。</li>
+                    <li><strong>开放科学集成</strong>：直接访问开放获取的论文、数据集和工具，无需切换平台。</li>
+                </ul>
+
+                <h2>2. 大模型友好的资源集成</h2>
+                <p>开放科学提出的开放获取与开放数据，提供了大量可供访问的资源。如果这些资源能够以“大模型友好”（MCP）的方式集成到写作环境中，将会极大地提高写作效率与正确性。</p>
+
+                <h2>3. Lint类工具的引入</h2>
+                <p>类似于IDE中的Lint工具，科研写作环境可以提供以下功能：</p>
+                <ol>
+                    <li><strong>语法纠错</strong>：检查拼写、语法和学术用语。</li>
+                    <li><strong>辅助查证</strong>：自动验证引用的正确性和完整性。</li>
+                    <li><strong>补充资料</strong>：推荐相关文献或数据。</li>
+                    <li><strong>索引生成</strong>：自动生成论文的索引和目录。</li>
+                </ol>
+
+                <h2>4. 开源生态的构建</h2>
+                <p>这些需求最理想的方式，是在一个开源的底座上，辅之以一大批开源的写作辅助插件、开源的AI助手和开源的专业领域LLM。这将为科研论文写作带来彻底的范式变革。</p>
+                <blockquote>
+                    <p>开源的力量在于协作和创新，科研写作的未来也必将如此。”</p>
+                </blockquote>
+
+                <!-- 文章尾部 -->
+                <footer class="mt-12">
+                    <div class="border-t pt-6">
+                        <p class="text-gray-600">作者：庄表伟</p>
+                        <div class="flex space-x-4 mt-4">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><i class="fab fa-twitter mr-2"></i>分享到Twitter</button>
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"><i class="fab fa-github mr-2"></i>查看开源项目</button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
